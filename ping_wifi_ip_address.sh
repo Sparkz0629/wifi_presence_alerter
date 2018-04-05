@@ -11,6 +11,7 @@ current_run_state=${root_dir}/state_current_run
 bot_properties=${root_dir}/telegram_bot_properties.props
 device_list=${root_dir}/device_list.lst
 retry_count=5
+retry_sleep_interval=5
 sleep_interval=60
 
 check_for_state(){
@@ -121,7 +122,7 @@ ping_address(){
 		then
 			return 0
 		fi
-		sleep 5
+		sleep ${retry_sleep_interval}
 	done
 	return 1
 }
