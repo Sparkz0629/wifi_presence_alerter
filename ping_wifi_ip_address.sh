@@ -66,7 +66,7 @@ send_bot_alert(){
 	chat_id=${2}
 	message=${3}
 
-	#curl -s -X POST https://api.telegram.org/bot${bot_key}/sendMessage -d text="${message}" -d chat_id="${chat_id}" >> /dev/null
+	curl -s -X POST https://api.telegram.org/bot${bot_key}/sendMessage -d text="${message}" -d chat_id="${chat_id}" >> /dev/null
 
 }
 
