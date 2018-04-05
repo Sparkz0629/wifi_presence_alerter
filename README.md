@@ -32,7 +32,13 @@ and add the following
 export WIFI_PRESENCE_ALERTER_ROOT={THE FULL DIRECTORY WHERE YOUR "ping_wifi_ip_address.sh" IS LOCATED}
 ```
 
-### Configuration
+### Static IP configuration
+It is suggested that you set static ip's for the devices you want to monitor.
+There are methods to pull these dynamically, but they are not reliable.
+
+To set a static IP, it is suggested you google it for your router brand and model.
+
+### Configuration Files
 
 The following configuration files are required:
 
